@@ -1,0 +1,171 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: wheat;
+    box-shadow: 0 0 10px black;
+    z-index: 10;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a {
+    margin-right: 20px; 
+}
+
+.logo-container img {
+    width: 30px; 
+    cursor: pointer;
+}
+
+section {
+    margin-top: 50px;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: wheat;
+    box-shadow: 0 0 10px black;
+    z-index: 10;
+}
+
+.acceuil {
+    display: flex;
+}
+
+.logo {
+    color: rgb(28, 0, 128);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.acceuil li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+.acceuil li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+
+.acceuil li a:hover {
+    color: black;
+}
+
+#usines,
+#inconvenients,
+#reduire {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: calc(100vh - 50px);
+    justify-content: space-between;
+}
+
+.left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h4 {
+    font-size: 20px;
+    color: green;
+}
+
+.left h1 {
+    font-size: 40px;
+}
+
+.left p {
+    font-size: 12px;
+    color: grey;
+}
+
+.left button {
+    margin-top: 20px;
+    width: fit-content;
+    padding: 5px 10px;
+    background-color: black;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.left button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.left button::before {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: beige;
+}
+
+.left button:hover a {
+    letter-spacing: 1px;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right img {
+    width: 100%;
+    animation: animate 2s linear;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
